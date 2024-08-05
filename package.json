@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Skipping tests\"",
-  "start": "node app.js"  // or your actual start script
+    "test": "echo \"No tests specified\""
   },
   "keywords": [],
   "author": "",
