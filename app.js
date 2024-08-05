@@ -1,6 +1,10 @@
 const express = require("express")
 const app = express();
 
+app.get('/',(req,res,next)=>{
+    res.send("it is working")
+})
+
 app.get("/package/fetch/:id", (req, res, next)=>{
     const packageId = req.params.id;
     const responseObject = {
