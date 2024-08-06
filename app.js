@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
+const cors = require('cors');
 
+
+app.use(cors());
 // Middleware for JSON requests
 app.use(express.json());
 
@@ -46,7 +49,7 @@ app.use((err, req, res, next) => {
 });
 
 // Set the port from environment variable or default to 3000
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
     console.log(`Server is running at port ${PORT}`);
